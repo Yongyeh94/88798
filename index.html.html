@@ -475,51 +475,6 @@ header p {
     </div>
 </footer>
 
-
-
-    <script>
-document.getElementById("propertyForm").addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-
-    const data = { name, email, phone };
-
-    // Your Google Apps Script Web App URL
-    const scriptURL = "YOUR_GOOGLE_SCRIPT_URL";
-
-    try {
-        const response = await fetch(scriptURL, {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-
-        const result = await response.json();
-        if (result.status === "success") {
-            document.getElementById("responseMessage").style.display = "block";
-            document.getElementById("responseMessage").textContent = "Thank you! Your submission has been recorded.";
-            document.getElementById("propertyForm").reset(); // Reset the form fields
-        } else {
-            throw new Error("Submission failed.");
-        }
-    } catch (error) {
-        alert("There was an error submitting your data. Please try again later.");
-    }
-});
-    if (response.ok) {
-        // Show success message with additional note
-        document.getElementById('responseMessage').style.display = 'block';
-        document.getElementById('responseMessage').textContent = "Thank you for your submission! You have been successfully added to our waiting list.";
-    } else {
-        alert('Something went wrong. Please try again.');
-    }
-});
-
     </script>
 </body>
 </html>
