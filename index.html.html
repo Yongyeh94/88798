@@ -474,7 +474,22 @@ header p {
         </div>
     </div>
 </footer>
+    <script>
+function changeImage(direction, gallery) {
+    const galleryImages = document.querySelectorAll(`.${gallery}-img`);
+    let currentIndex = [...galleryImages].findIndex(image => image.classList.contains("active"));
 
+    galleryImages[currentIndex].classList.remove("active");
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = galleryImages.length - 1;
+    } else if (currentIndex >= galleryImages.length) {
+        currentIndex = 0;
+    }
+
+    galleryImages[currentIndex].classList.add("active");
+}
     </script>
 </body>
 </html>
