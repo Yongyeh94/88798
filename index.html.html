@@ -241,6 +241,24 @@ header p {
     </style>
 </head>
 <body>
+<!-- Navigation Bar -->
+<nav style="background-color: #333; padding: 10px 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Logo (Optional) -->
+        <div>
+            <a href="#" style="color: #fff; font-size: 24px; font-weight: bold; text-decoration: none;">Your Logo</a>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+            <li><a href="#location" style="color: #fff; font-size: 18px; text-decoration: none; padding: 8px 16px; border-radius: 4px; transition: background-color 0.3s ease;">Location</a></li>
+            <li><a href="#gallery" style="color: #fff; font-size: 18px; text-decoration: none; padding: 8px 16px; border-radius: 4px; transition: background-color 0.3s ease;">Gallery</a></li>
+<!-- Link to Contact Us Section -->
+            <li><a href="#contact-us" style="color: #fff; font-size: 18px; text-decoration: none; padding: 8px 16px; border-radius: 4px; transition: background-color 0.3s ease;">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
     <header>
         <div class="header-container">
             <h1>Walking Distance to CIQ</h1>
@@ -262,7 +280,21 @@ header p {
             </ul>
         </section>
 
-        <section class="gallery">
+
+
+<!-- Location Section -->
+<section id="location" style="text-align: center; padding: 40px 20px;">
+    <div class="container">
+        <h2>Our Location</h2>
+        <p>Discover our strategic location and how easy it is to find us. Check the map below:</p>
+        <div class="map-image" style="display: inline-block;">
+            <img src="map-image.jpg" alt="Location Map" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+    </div>
+</section>
+
+
+        <section class="gallery" id="gallery">
             <h2 class="gallery-heading">Hotel Style</h2>
             <div class="gallery-container">
                 <img src="CIQ-1.jpg" alt="Hotel Image" class="gallery-img active hotel-img">
@@ -284,7 +316,7 @@ header p {
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta" id="contact-us">
             <h2>Take the First Step Toward Your Dream Home</h2>
             <form id="propertyForm">
                 <input type="text" id="name" placeholder="Your Name" required>
