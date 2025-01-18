@@ -276,16 +276,18 @@ header p {
     display: block;
   }
 
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    #navbar {
-      flex-direction: column;
-      align-items: center;
+  /* Adjust font size for different screen sizes */
+  @media (max-width: 1024px) {
+    #navbar a {
+      padding: 12px;
+      font-size: 14px;
     }
+  }
 
+  @media (max-width: 768px) {
     #navbar a {
       padding: 10px;
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 
@@ -296,6 +298,7 @@ header p {
     }
   }
 </style>
+
 
 
     <header>
@@ -327,7 +330,7 @@ header p {
         <h2>Our Location</h2>
         <p>Discover our strategic location and how easy it is to find us. Check the map below:</p>
         <div class="map-image" style="display: inline-block;">
-            <img src="map-image.jpeg" alt="Location Map" style="max-width: 60%; height: auto; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <img src="map-image.jpg" alt="Location Map" style="max-width: 60%; height: auto; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         </div>
     </div>
 </section>
@@ -458,7 +461,7 @@ header p {
             </div>
         </div>
         <div class="footer-contact">
-            <p>&copy; 2025 Your Trusted Partner. All rights reserved.</p>
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
         </div>
     </div>
 </footer>
