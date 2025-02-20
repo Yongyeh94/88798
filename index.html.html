@@ -176,6 +176,21 @@ header p {
             right: 10px;
         }
 
+                .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 80vh; /* Adjusts height based on the viewport */
+            border: none;
+        }
+
         /* CTA Section */
         .cta {
             background: #ff5722;
@@ -379,12 +394,9 @@ header p {
     <h1>Fill Out the Form Below</h1>
     <!-- Google Form Embed -->
     <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSez7uaOq1BMuV4demI5RoXJo6c_qPWJVHL3Qt28Hlp9U_29WA/viewform?embedded=true" 
-        width="640" 
-        height="800" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
+      <div class="form-container">
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSez7uaOq1BMuV4demI5RoXJo6c_qPWJVHL3Qt28Hlp9U_29WA/viewform?embedded=true">
         Loading…
     </iframe>
 </body>
@@ -474,7 +486,7 @@ header p {
         </div>
         <div class="footer-contact">
             <div class="whatsapp-btn-container">
-                <a href="https://wa.me/60187693817" class="whatsapp-btn" target="_blank" aria-label="Contact us on WhatsApp">
+                <a href="https://wa.me/601117853681" class="whatsapp-btn" target="_blank" aria-label="Contact us on WhatsApp">
                     <img src="whatsapp-icon.png" alt="WhatsApp">
                 </a>
                 <p class="contact-text">Contact us for more information!</p>
